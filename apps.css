@@ -14,7 +14,7 @@ body{
     background-size: contain;
     background-color: var(--Paleblue);
     font-family: 'Red Hat Display', sans-serif;
-   
+   /* overflow: hidden; */
   }
 
 :root{
@@ -42,11 +42,13 @@ a{
     font-weight: 900;
 }
 .container{
+    max-width: 100vw;
     min-height: 100vh;
     display: grid;
     grid-template-columns:minmax(350px, 500px);
     padding: 2rem;
     justify-content: center;
+    margin: auto;
 }
 
 .card{
@@ -117,6 +119,7 @@ a{
 
 .annual-plan a{
     color: var(--Brightblue);
+    transition: 0.3s;
 }
 .annual-plan a:hover{
     color: rgba(56, 41, 224,.8);
@@ -142,15 +145,18 @@ a{
    font-size: 1.1rem;
    box-shadow: 3px 8px 22px rgba(56, 41, 224,.3);
    margin-bottom: 2rem;
-}
+   transition: 0.3s;
+  }
 
 
 .proceed a:hover{
+   
     background-color: rgba(56, 41, 224,.8);
 }
 .proceed h1{
    color: var(--Desaturatedblue);
    font-size: 1.5rem;
+   transition: 0.3s;
 }
 .proceed h1:hover{
    color: black;
@@ -175,8 +181,8 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-color: var(--Paleblue);
-   
-  }
+ }
+
 
 .annual h1 {
     line-height: 1rem;
