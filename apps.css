@@ -178,7 +178,6 @@ body{
    
   }
 
-
 .annual h1 {
     line-height: 1rem;
     font-size: 1.6em;
@@ -193,11 +192,17 @@ body{
     font-size: 2rem;
 }
   .proceed a{
-    
+    padding: 1rem;
    font-size: 1.3rem;
+   border-radius: .7rem;
 }
 
 .attribution{
     font-size: 1rem;
+}
+
+.annual-plan{
+   
+   padding: 1rem; 
 }
 }
