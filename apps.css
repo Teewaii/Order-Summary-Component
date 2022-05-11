@@ -9,6 +9,9 @@
 body{
     box-sizing: border-box;
     width: 100vw;
+    background: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
     background-color: var(--Paleblue);
     font-family: 'Red Hat Display', sans-serif;
    
@@ -39,35 +42,38 @@ a{
     font-weight: 900;
 }
 .container{
-    border: 1px solid red;
     min-height: 100vh;
     display: grid;
-    grid-template-columns:minmax(300px, 500px);
+    grid-template-columns:minmax(350px, 500px);
     padding: 2rem;
     justify-content: center;
 }
 
 .card{
-   background-color: white;
+    width: 100%;
+    background-color: white;
     margin: 1rem auto;
-   max-height: 84vh;
-    border-radius: 20px;
-    box-shadow: 3px 3px 12px rgba(56, 41, 224,.1);
-    overflow: hidden;
+   min-height: 80vh;
+   border-radius: 20px;
+   box-shadow: 3px 3px 12px rgba(56, 41, 224,.1);
    display: grid;
-   grid-template-rows: auto auto auto auto;
-  place-content: center;
+   grid-template-rows:auto auto auto auto;
+  overflow: hidden;
 }
 
+
+/* HERO SECTION */
 .hero img{
    width: 100%;
-    background: url(/images/illustration-hero.svg);
+  margin: 0;
  }
 
+ /* ORDER SUMMARY SECTION */
  .order-summary{   
      padding:2rem 3rem;
      text-align: center;
      margin: 0;
+     place-content: center;
  }
 
  .order-summary h1{
@@ -76,8 +82,10 @@ a{
 
  .order-summary p{    
     line-height: 2rem;
+   
  }
 
+ /* ANNUAL PLAN BANNER */
  .annual-plan{
      margin:0 auto;
     background-color: var(--Verypaleblue);
@@ -90,28 +98,32 @@ a{
  }
 
  .annual-plan img{
-   
-     width: 5rem;
+   width: 4rem;
  }
 
  .annual{
-     line-height: 1rem;
+     line-height: .7rem;
  }
 
  .annual h1 {
      line-height: 1rem;
-     font-size: 1.5em;
+     font-size: 1.2em;
 }
 
  .annual p {
      line-height: 1rem;
-     font-size: 1.5em;
+     font-size: 1.1em;
 }
 
 .annual-plan a{
     color: var(--Brightblue);
 }
+.annual-plan a:hover{
+    color: rgba(56, 41, 224,.8);
+}
 
+
+/* ORDER SECTION */
 .proceed {
      width: 88%;
     margin: 3rem auto;
@@ -132,7 +144,60 @@ a{
    margin-bottom: 2rem;
 }
 
+
+.proceed a:hover{
+    background-color: rgba(56, 41, 224,.8);
+}
 .proceed h1{
    color: var(--Desaturatedblue);
    font-size: 1.5rem;
+}
+.proceed h1:hover{
+   color: black;
+}
+
+
+/* FOOTER */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution{
+    font-size: .8rem;
+}
+
+/* LARGER SCREENS */
+
+@media (min-width:800px) {
+    
+body{
+   
+    background: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Paleblue);
+   
+  }
+
+
+.annual h1 {
+    line-height: 1rem;
+    font-size: 1.6em;
+}
+
+.annual p {
+    line-height: 3rem;
+    font-size: 1.5em;
+}
+
+.annual a {
+    font-size: 2rem;
+}
+  .proceed a{
+    
+   font-size: 1.3rem;
+}
+
+.attribution{
+    font-size: 1rem;
+}
 }
