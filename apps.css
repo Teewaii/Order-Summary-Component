@@ -93,7 +93,7 @@ a {
     font-size: 1rem;
 }
 
-.annual-plan a:hover {
+.annual-plan a {
     color: rgba(56, 41, 224, .8);
 }
 
@@ -151,6 +151,15 @@ a {
 @media (min-width:800px) {
 
     body {
+
+        box-sizing: border-box;
+        width: 100vw;
         background: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: var(--Paleblue);
+        font-family: 'Red Hat Display', sans-serif;
+        /* overflow: hidden; */
+        padding: 2rem;
     }
 }
