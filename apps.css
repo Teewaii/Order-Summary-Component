@@ -93,7 +93,7 @@ a {
     font-size: 1rem;
 }
 
-.annual-plan a {
+.annual-plan a:hover {
     color: rgba(56, 41, 224, .8);
 }
 
